@@ -1,0 +1,103 @@
+
+.navebar
+{
+    width:  100%;
+    display: flex;
+    align-items: center;
+    text-shadow: 3px 3px 3px rgb(233, 233, 242);
+
+}
+nav
+{
+    height: 20px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #A682CA;
+        z-index: 100;
+
+
+}
+nav
+{
+    position: fixed;
+    right: 1px;
+    flex: 1;
+    text-align: right;
+
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+
+    margin-right: 30px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #480473;
+    font-size: 14px;
+font-weight: 700;
+    display: block-inline;
+    text-align: center;
+    padding: 14px;
+    font-family: Copperplate, Papyrus, fantasy	;
+}
+
+nav ul li a:hover:not(.active)
+{
+background-color: #7613E8;
+}
+
+.active
+{
+    background-color: #DDCBE3;
+        text-shadow: 3px 3px 3px #A682CA;
+
+}
+@media only screen and (max-width: 700px) {
+    nav{
+    position: relative;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    background-color: #A682CA;
+    }
+
+    nav ul {
+    border-radius: 10px;
+    width: 50%;
+    background-color: #A682CA;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 2;
+
+    }
+    nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 14px;
+    }
+nav ul::-webkit-scrollbar {
+  width: 20px;
+}
+
+nav ul::-webkit-scrollbar-track {
+    box-shadow: #DDCBE3 0px 0px 0px 2px inset;
+}
+ 
+nav ul::-webkit-scrollbar-thumb {
+  background: #6404AE; 
+}
+
+nav ul::-webkit-scrollbar-thumb:hover {
+  background: #480473; 
+}
+nav ul::-webkit-scrollbar:horizontal
+{
+      display: none;
+}
+
+
+
+}
