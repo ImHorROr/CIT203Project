@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="cssFiles/contactUs.css">
+    <link rel="stylesheet" href="cssFiles/Nav.css">
+    <link rel="stylesheet" href="cssFiles/MainStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+    <title>Contact us</title>
+</head>
+<!--2-	One of the pages has to have a form to contact you (contact us form ).
+a.	The Form should have some validating criteria such as (email validation)
+b.	You need to use multiple types of text input, with a consideration  of using ( placeholder, pattern attributes )-->
+
+<body>
+
+    <div class="container">
+        <img src="img/logo.svg" class="logo">
+
+        <div class="test">
+            <div class="navebar">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="introToGameDev.html">Introduction</a></li>
+                        <li><a href="GamesExamples.html">Games Examples</a></li>
+                        <li><a href="industry.html">Industry</a></li>
+                        <li><a href="TowerGame.html">TowerGame</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a class="active" href="contactUs.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <img src="img/menu.png" class="menu-icon" onclick="toggleMenu()">
+        </div> <br>
+        <div class="t">
+
+            <form>
+                <div class="rowinput">
+                    <div class="input-group">
+                        <input type="text" name="" id="name" placeholder="Ahmed almalki" required>
+                        <label for="name"><i class="fas fa-user"></i> Your Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="number" name="" id="Phone" placeholder="055-55-555" required>
+                        <label for="Phone"> <i class="fas fa-phone-square-alt"></i> Phone Number</label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="" id="email" placeholder="ex@ex.ex" required>
+                    <label for="email"> <i class="fas fa-envelope"></i> Your Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" rows="8" placeholder="is it okay if I.." required></textarea>
+                    <label for="message"> <i class="fas fa-comments"></i> Your Message</label>
+                </div>
+                <button class="subB" type="submit">Submit</button>
+
+            </form>
+        </div>
+
+    </div>
+    <script src="jsFiles/MenuScripts.js"></script>
+
+</body>
+
+</html>

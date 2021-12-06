@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="cssFiles/Gallary.css">
+
+    <link rel="stylesheet" href="cssFiles/Nav.css">
+    <link rel="stylesheet" href="cssFiles/MainStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Games Examples</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="img/logo.svg" class="logo">
+
+        <div class="test">
+            <div class="navebar">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="introToGameDev.html">Introduction</a></li>
+                        <li><a class="active" href="GamesExamples.html">Games Examples</a></li>
+                        <li><a href="industry.html">Industry</a></li>
+                        <li><a href="TowerGame.html">TowerGame</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="img/menu.png" class="menu-icon" onclick="toggleMenu()">
+        </div>
+
+
+        <div class="full-detail" id="fullDetail">
+            <h1 id="gameName">game name</h1>
+            <br>
+            <p id="gameDes">game Description</p>
+            <video controls id="video">
+                <source id="source" src="test.mp4" type="video/mp4">
+            </video>
+            <img src="pav/bf42.png" id="fullImg">
+
+
+            <span onclick="CloseFulldetail()">X</span>
+        </div>
+
+
+
+
+        <div class="img-gallrey">
+
+            <img src="pav/bf42.png"
+                onclick="openFulldetail(this.src , 'BattleField 2042' , 'is a first-person shooter video game developed by DICE and published by Electronic Arts.'), ChangeVideo('pav/BattleField.mp4')">
+
+
+            <img src="pav/assassins.jpg"
+                onclick="openFulldetail(this.src , 'Assassins Creed Valhalla' , 'is a 2020 action role-playing video game developed by Ubisoft Montreal and published by Ubisoft.', ChangeVideo('pav/assassin.mp4'))">
+
+            <img src="pav/Crab_Game.svg.jpg"
+                onclick="openFulldetail(this.src , 'Crab Games' , 'is a First-Person Multiplayer game where you play through several different minigames based on childrens games, until only one player stands victorious.', ChangeVideo('pav/Crab.mp4'))">
+            <img src="pav/forza.jpg"
+                onclick="openFulldetail(this.src , 'Forza Horizon 5' , ' is a 2021 racing video game developed by Playground Games and published by Xbox Game Studios.', ChangeVideo('pav/Forza.mp4'))">
+
+
+            <img src="pav/it.png"
+                onclick="openFulldetail(this.src , 'It Takes Two' , ' is an action-adventure platform game developed by Hazelight Studios and published by Electronic Arts. ', ChangeVideo('pav/it.mp4'))">
+
+
+            <img src="pav/Minecraft-360.jpg"
+                onclick="openFulldetail(this.src , 'Minecraft' , ' is a sandbox video game developed by the Swedish video game developer Mojang Studios.', ChangeVideo('pav/Minecraft.mp4'))">
+            <img src="pav/rl.jpg"
+                onclick="openFulldetail(this.src , 'Rocket League' , ' is a vehicular soccer video game developed and published by Psyonix. ',ChangeVideo('pav/Rocket.mp4'))">
+            <img src="pav/Pedro.jpg"
+                onclick="openFulldetail(this.src ,'My Friend Pedro' , ' is a shoot em up video game developed by DeadToast Entertainment and published by Devolver Digital. ', ChangeVideo('Pav/edro.mp4'))">
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+
+        var fullDetail = document.getElementById("fullDetail");
+        var fullImg = document.getElementById("fullImg");
+        var gameName = document.getElementById("gameName");
+        var gameDes = document.getElementById("gameDes");
+        var vid = document.getElementById('video');
+
+        function ChangeVideo(src1) {
+            document.getElementById('video').src = src1;
+        }
+
+
+        function openFulldetail(Nsrc, NgameName, NgameDes) {
+
+            fullDetail.style.display = "flex";
+            fullImg.src = Nsrc;
+            gameName.textContent = NgameName;
+            gameDes.textContent = NgameDes;
+
+        }
+        function CloseFulldetail() {
+            fullDetail.style.display = "none";
+            vid.pause();
+            video.currentTime = 0;
+
+        }
+
+    </script>
+
+
+    <script src="jsFiles/MenuScripts.js"></script>
+
+</body>
+
+</html>
