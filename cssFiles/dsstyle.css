@@ -13,11 +13,12 @@ span
     height: 500px;
     margin:auto;
     border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.326);
 }
 
 .game .slider{
     visibility: hidden;
-    background-color: rgb(152, 33, 98);
+    background-color: #3d007b;
     height: 20px;
     width: 100px;
     position: relative;
@@ -36,7 +37,6 @@ span
 
 
 #btn{
-    background-color: lightgreen;
     font-size: 2rem;
     padding: 0.5rem 2rem;
     border: 3px solid black;
@@ -44,9 +44,7 @@ span
     margin: 1rem auto;
     display: block;
 }
-#btn:hover{
-    background-color: yellow; 
-}
+
 #btn:active{
     background-color: rgb(128, 20, 205);
 }

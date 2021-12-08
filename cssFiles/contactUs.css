@@ -27,11 +27,12 @@ input,textarea
     width: 100%;
     padding: 10px ;
     outline: 0;
+    background-color: #a682cacc;
     border: 1px solid black;
     border-radius: 10px ;
-    background: transparent;
+    
     font-size: 15px;
-    color: tomato;
+    color: rgb(255, 255, 255);
 }
 label
 {
